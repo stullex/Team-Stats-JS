@@ -5,9 +5,9 @@ const team = {
             { firstName: "Sakura", lastName: "Haruno", age: 16 }
     ],
     _games: [
-            { opponent: "Kisame Hoshigaki", teamPoints: 69, opponentPoints: 31},
-            { opponent: "Danso Shimura", teamPoints: 78, opponentPoints: 22},
-            { opponent: "Nagato Uzumaki", teamPoints: 51, opponentPoints: 49}
+            { opponent: "Kisame Hoshigaki", teamPoints: 69, opponentPoints: 31 },
+            { opponent: "Danso Shimura", teamPoints: 78, opponentPoints: 22 },
+            { opponent: "Nagato Uzumaki", teamPoints: 51, opponentPoints: 49 }
     ],
 
     get players() {
@@ -21,7 +21,7 @@ const team = {
     addPlayer(newFirstName, newLastName, newAge) {
         let player = {
             firstName: newFirstName,
-            lastName:newLastName,
+            lastName: newLastName,
             age: newAge
         }
         this.players.push(player)
@@ -35,7 +35,6 @@ const team = {
         }
         this.games.push(game)
     }
-
 }
 
 team.addGame("Gol D. Roger", 0, 1000)
@@ -45,3 +44,4 @@ team.addPlayer("Sasuke", "Uchiha", 16)
 
 
 console.log(team.games)
+console.log(team.players)
